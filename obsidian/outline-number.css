@@ -1,0 +1,20 @@
+/* container of first layer headings. */
+.outline {
+  counter-reset: rootCounter;
+}
+
+.outline .tree-item .tree-item-self .tree-item-inner::before {
+  content: counters(rootCounter, ".") ". ";
+  counter-increment: rootCounter;
+}
+
+/* container of the ohter headings. */
+/* NOTE: It is not .outline anymore. So we need a new counter */
+.outline .tree-item-children {
+  counter-reset: innerCounter;
+}
+
+.outline .tree-item-children .tree-item .tree-item-self .tree-item-inner::before {
+  content: counters(rootCounter, ".") "." counters(innerCounter, ".") ". ";
+  counter-increment: innerCounter;
+}
