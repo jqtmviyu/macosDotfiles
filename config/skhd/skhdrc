@@ -1,0 +1,140 @@
+# Show system statistics
+
+# Navigation
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+# Moving windows
+shift + alt - h : yabai -m window --warp west
+shift + alt - j : yabai -m window --warp south
+shift + alt - k : yabai -m window --warp north
+shift + alt - l : yabai -m window --warp east
+
+# Resize windows
+lctrl + alt - h : \
+    yabai -m window --resize left:-20:0 ; \
+    yabai -m window --resize right:-20:0
+
+lctrl + alt - j : \
+    yabai -m window --resize bottom:0:20 ; \
+    yabai -m window --resize top:0:20
+
+lctrl + alt - k : \
+    yabai -m window --resize top:0:-20 ; \
+    yabai -m window --resize bottom:0:-20
+
+lctrl + alt - l : \
+    yabai -m window --resize right:20:0 ; \
+    yabai -m window --resize left:20:0
+
+# Equalize size of windows
+lctrl + alt - 0 : yabai -m space --balance
+
+# Enable / Disable gaps in current workspace
+# lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+# Rotate windows clockwise and anticlockwise
+alt - r         : yabai -m space --rotate 90
+lctrl + alt - r : yabai -m space --rotate 270
+
+# Rotate on X and Y Axis
+lctrl + alt - x : yabai -m space --mirror x-axis
+lctrl + alt - y : yabai -m space --mirror y-axis
+
+# Set insertion point for focused container
+shift + lctrl + alt - h : yabai -m window --insert west
+shift + lctrl + alt - j : yabai -m window --insert south
+shift + lctrl + alt - k : yabai -m window --insert north
+shift + lctrl + alt - l : yabai -m window --insert east
+
+# Float / Unfloat window (更换 layout 方式)
+alt - space : yabai -m window --toggle float
+# Float and center window
+alt - c : yabai -m window --toggle float;\
+                  yabai -m window --grid 4:4:1:1:2:2
+# Toggle sticky (show on all spaces)
+alt - s : yabai -m window --toggle sticky
+# Toggle topmost (keep above other windows)
+alt - t : yabai -m window --toggle topmost
+
+# Restart Yabai
+shift + lctrl + alt - r : yabai --restart-service
+
+# Make window native fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
+# shift + alt - f : yabai -m window --toggle native-fullscreen # 和macos的全屏快捷键ctrl+cmd+f重复,会占用vscode格式代码快捷键
+
+# toggle window split type
+alt - e : yabai -m window --toggle split
+
+# increase window size 竖直方向才能用 top  水平方向才能用 left
+# shift + alt - d : yabai -m window --resize left:-20:0
+# shift + alt - w : yabai -m window --resize top:0:-20
+
+# decrease window size
+# shift + alt - a : yabai -m window --resize left:20:0
+# shift + alt - s : yabai -m window --resize top:0:20
+
+# fast focus desktop (切换空间焦点)
+# cmd + alt - x : yabai -m space --focus recent
+# cmd + alt - z : yabai -m space --focus prev
+# cmd + alt - c : yabai -m space --focus next
+
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+alt - 7 : yabai -m space --focus 7
+alt - 8 : yabai -m space --focus 8
+alt - 9 : yabai -m space --focus 9
+alt - 0 : yabai -m space --focus 10
+
+# create new space
+lctrl + alt - n : yabai -m space --create
+lctrl + alt - m : yabai -m space --destroy
+
+# destroy empty spaces
+shift + lctrl + alt - w : echo "destroy empty spaces";\
+                        yabai -m query --spaces \
+                        | jq 'reverse | .[] | select((.windows | length) == 0) | .index' \
+                        | xargs -I{} yabai -m space {} --destroy \;
+
+# send window to space
+shift + alt - 1 : yabai -m window --space 1
+shift + alt - 2 : yabai -m window --space 2
+shift + alt - 3 : yabai -m window --space 3
+shift + alt - 4 : yabai -m window --space 4
+shift + alt - 5 : yabai -m window --space 5
+shift + alt - 6 : yabai -m window --space 6
+shift + alt - 7 : yabai -m window --space 7
+shift + alt - 8 : yabai -m window --space 8
+shift + alt - 9 : yabai -m window --space 9
+shift + alt - 0 : yabai -m window --space 10
+
+# Move focus container to workspace
+shift + cmd - m : yabai -m window --space last && yabai -m space --focus last
+shift + cmd - b : yabai -m window --space prev && yabai -m space --focus prev
+shift + cmd - n : yabai -m window --space next && yabai -m space --focus next
+shift + cmd - 1 : yabai -m window --space 1 && yabai -m space --focus 1
+shift + cmd - 2 : yabai -m window --space 2 && yabai -m space --focus 2
+shift + cmd - 3 : yabai -m window --space 3 && yabai -m space --focus 3
+shift + cmd - 4 : yabai -m window --space 4 && yabai -m space --focus 4
+shift + cmd - 5 : yabai -m window --space 5 && yabai -m space --focus 5
+shift + cmd - 6 : yabai -m window --space 6 && yabai -m space --focus 6
+
+# Change layout of desktop
+alt + ctrl - f : yabai -m space --layout float && \
+                 yabai -m config window_border off
+alt + ctrl - b : yabai -m space --layout bsp && \
+                 yabai -m config window_border off
+
+# Open app
+alt - return : open -a "Alacritty"
+# shift + alt - return : osascript -e 'tell application "iTerm2" to create window with default profile command ""'
+# shift + alt - return : osascript -e 'tell application "iTerm2" to tell current window to create tab with default profile'
+alt - f1 : open -a "Google Chrome Beta"
+alt - f2 : open -a "Visual Studio Code"
