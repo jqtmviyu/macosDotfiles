@@ -78,10 +78,12 @@ font:
     y: 0
 
 window:
+  #idynamic_padding: true
   padding:
-    x: 20
-    y: 22
-  decorations: transparent
+    x: 5
+    y: 8
+  #decorations: transparent
+  decorations: buttonless # macos only
   dimensions:
     columns: 120
     lines: 25
