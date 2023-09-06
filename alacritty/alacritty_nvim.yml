@@ -1,12 +1,10 @@
 live_config_reload: true
-#shell:
-  #program: /bin/zsh
-  #args:
-  #  - -l
-  #  - -c
-    #- "tmux new-session -A -D -s main"
-  #  - "zellij attach --index 0 --create"
-
+shell:
+#  program: /bin/zsh
+#  args:
+#    - -l
+#    - -c
+#    - "nvim"
 #env:
 #  TERM: xterm-256color
 
@@ -70,7 +68,7 @@ font:
     style: Bold Italic
 
   # 字大小
-  size: 14.0
+  size: 16.0
 
   offset:
     x: 0
@@ -86,15 +84,14 @@ mouse:
 # 窗口
 window:
   #opacity: 0.95
-  dynamic_padding: false
+  #dynamic_padding: true
   padding:
     x: 10
     y: 18
-  #decorations: transparent
-  decorations: buttonless # macos only
+  decorations: transparent
   dimensions:
-    columns: 120
-    lines: 25
+    columns: 220
+    lines: 55
   position:
     x: 600
     y: 300
