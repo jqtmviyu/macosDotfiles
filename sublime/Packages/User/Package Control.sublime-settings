@@ -1,0 +1,33 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"AutoFileName",
+		"BracketHighlighter",
+		"CodeFormatter",
+		"ColorPicker",
+		"ConvertToUTF8",
+		"DocBlockr",
+		"Emmet",
+		"Formatter",
+		"GitGutter",
+		"HTML5",
+		"HTMLAttributes",
+		"HTMLBeautify",
+		"jQuery",
+		"JsFormat",
+		"Less",
+		"MarkdownPreview",
+		"Package Control",
+		"Sass",
+		"SidebarSeparator",
+		"SublimeLinter",
+		"Theme - Monokai Pro",
+		"TrailingSpaces",
+		"Trimmer",
+	],
+}

@@ -1,0 +1,18 @@
+{
+    "color_scheme": "Monokai Classic.sublime-color-scheme",
+    "remember_open_files": true,
+    "rulers": [
+        80,
+        100,
+        120
+    ],
+    "translate_tabs_to_spaces": true,
+    "ignored_packages": [],
+    "default_line_ending": "unix",
+    "font_face": "Sarasa Term SC Nerd",
+    "theme": "Monokai Classic.sublime-theme",
+    "tab_size": 2,
+    "hot_exit": true,
+    "index_files": true,
+    "font_size": 16
+}
