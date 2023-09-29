@@ -80,14 +80,14 @@ yabai -m rule --add app="^Code$" space=2
 yabai -m rule --add app="^(Typora|Obsidian)$" space=3
 yabai -m config --space 4 layout float
 yabai -m rule --add app="^(DingTalk|WeChat|TencentMeeting|QQ|Microsoft Outlook)$" space=4
-yabai -m rule --add app="^Google Chrome$" space=5
+yabai -m rule --add app="^(Google Chrome|Floorp)$" space=5
 # 第六个空间全部浮动
 yabai -m config --space 6 layout float
-space6App='^(AnyDsesk|Parallels Desktop|YesPlayMusic|QtScrcpy|网易MuMu|Spotify|Swinsian|DBeaver|League of Legends|UU Booster)$'
+space6App='^(AnyDsesk|Parallels Desktop|YesPlayMusic|QtScrcpy|网易MuMu|Spotify|Swinsian|DBeaver|League of Legends|UU Booster|HandShaker)$'
 yabai -m rule --add app="${space6App}" space=6
 
 # 临时性的App 也就是manage=off不受到yabai平铺式的限制，之前怎么弹出来就怎么弹出来
-manageOffApp='^(Finder|Calendar|System Preferences|Mail|Stats|App Store|LICEcap|Imagine|PicGo|electerm|KeePassXC|AppCleaner|Pixea|PictureView|App Cleaner & Uninstaller|iTerm2|NeatDownloadManager|Activity Monitor|Plash|Microsoft To Do|IINA|WindTerm|EuDic|Dash|qBittorrent|Infuse|Charles|Sublime Text|Alfred Preferences|Dictionary|Safari|Terminal|Alacritty|Raycast|kitty)$'
+manageOffApp='^(Finder|Calendar|System Preferences|Mail|Stats|App Store|LICEcap|Imagine|PicGo|electerm|KeePassXC|AppCleaner|Pixea|PictureView|App Cleaner & Uninstaller|iTerm2|NeatDownloadManager|Activity Monitor|Plash|Microsoft To Do|IINA|WindTerm|EuDic|Dash|qBittorrent|Infuse|Charles|Sublime Text|Alfred Preferences|Dictionary|Safari|Terminal|Alacritty|Raycast|YouTube Music)$'
 yabai -m rule --add app="${manageOffApp}" manage=off
 
 echo "yabai configuration loaded.."

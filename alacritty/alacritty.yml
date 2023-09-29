@@ -94,7 +94,7 @@ mouse:
 
 # 窗口
 window:
-  opacity: 0.95
+  opacity: 0.96
   dynamic_padding: false
   padding:
     x: 10
@@ -106,8 +106,8 @@ window:
     columns: 120
     lines: 25
   position:
-    x: 600
-    y: 300
+    x: 1200
+    y: 900
 
 scrolling:
   # 回滚缓冲区中的最大行数,指定“0”将禁用滚动。
@@ -166,9 +166,9 @@ key_bindings:
   - { key: R, mods: Command, mode: ~Vi|~Search, action: ClearHistory }
   - { key: H, mods: Command, action: Hide }
   - { key: W, mods: Command, action: Quit }
-  #- { key: R, mods: Command, action: SpawnNewInstance }
+  - { key: N, mods: Command, action: SpawnNewInstance }
   - { key: T, mods: Command, action: CreateNewWindow }
-  - { key: N, mods: Command, chars: "\x02\x63" } # tmux new-window
+  #- { key: N, mods: Command, chars: "\x02\x63" } # tmux new-window
   - { key: Back, action: ReceiveChar }
   - { key: Back, mods: Command, chars: "\x15" } # Delete line
   - { key: Left, mods: Command, chars: "\x01" } # Home

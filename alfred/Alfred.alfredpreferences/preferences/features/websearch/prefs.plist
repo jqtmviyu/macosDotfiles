@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>6B88A2D6-4B4B-4AA5-A75A-8C24B990A0DA</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>sf</string>
+			<key>text</key>
+			<string>Search stackoverflow for '{query}'</string>
+			<key>url</key>
+			<string>https://www.stackoverflow.com/search?q={query}</string>
+		</dict>
+		<key>6F9028BF-E729-43E6-BE2C-1F519B71AF22</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bi</string>
+			<key>text</key>
+			<string>Search bilibili for '{query}'</string>
+			<key>url</key>
+			<string>https://search.bilibili.com/all?keyword={query}</string>
+		</dict>
+		<key>7581E186-110B-4B9B-B725-9BC42D7AA2FE</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>mp3</string>
+			<key>text</key>
+			<string>search mp3 for '{query}'</string>
+			<key>url</key>
+			<string>https://tools.liumingye.cn/music/?page=searchPage#/search/M/song/{query}</string>
+		</dict>
+		<key>AA4F65A0-8257-4663-A880-3AE49599555A</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bd</string>
+			<key>text</key>
+			<string>Search baidu for '{query}'</string>
+			<key>url</key>
+			<string>https://www.baidu.com/s?wd={query}
+https://www.baidu.com/s?q={query}
+https://www.baidu.com/s?q={query}
+https://www.baidu.com/s?q={query}
+https://www.baidu.com/s?q={query}
+https://www.baidu.com/s?q={query}</string>
+		</dict>
+		<key>AE4DE927-1851-4A85-8E11-3C4DB23A1149</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gh</string>
+			<key>text</key>
+			<string>Search github for '{query}'</string>
+			<key>url</key>
+			<string>https://github.com/search?utf8=%E2%9C%93&amp;q={query}</string>
+		</dict>
+		<key>F9DF43DB-1889-4D91-AC09-A9D7E69F7881</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>v2</string>
+			<key>text</key>
+			<string>Search v2ex for '{query}'</string>
+			<key>url</key>
+			<string>https://www.sov2ex.com/?q={query}</string>
+		</dict>
+	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
+</dict>
+</plist>

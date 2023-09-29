@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>652D2F59-7E6C-4B36-9503-93ED8B8D3592</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AB73579-AC11-4829-93CD-4FD13485C5E6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C493EAFC-111D-4551-ACAB-273B278BB036</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AB73579-AC11-4829-93CD-4FD13485C5E6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string>merge all finder windows</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>merge all finder windows</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>mw</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>merge window</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>652D2F59-7E6C-4B36-9503-93ED8B8D3592</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events" to click menu item "Merge All Windows" of menu "Window" of menu bar item "Window" of menu bar 1 of application process "Finder" of application "System Events"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E3DDCD81-8D71-40E1-ACBD-3726B65C0A03</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+        tell application process "Finder"
+            tell menu bar item "Window" of menu bar 1
+                tell menu "Window"
+                    click menu item "Merge All Windows"
+                end tell
+            end tell
+        end tell
+    end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5AB73579-AC11-4829-93CD-4FD13485C5E6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>wm</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>merge window</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C493EAFC-111D-4551-ACAB-273B278BB036</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>5AB73579-AC11-4829-93CD-4FD13485C5E6</key>
+		<dict>
+			<key>xpos</key>
+			<real>250</real>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+		<key>652D2F59-7E6C-4B36-9503-93ED8B8D3592</key>
+		<dict>
+			<key>note</key>
+			<string>Type your keyword into Alfred to trigger this workflow.</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+		<key>C493EAFC-111D-4551-ACAB-273B278BB036</key>
+		<dict>
+			<key>note</key>
+			<string>Type your keyword into Alfred to trigger this workflow.</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>270</real>
+		</dict>
+		<key>E3DDCD81-8D71-40E1-ACBD-3726B65C0A03</key>
+		<dict>
+			<key>xpos</key>
+			<real>250</real>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string></string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

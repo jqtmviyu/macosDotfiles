@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "export https_proxy=http:\/\/192.168.31.51:7890 http_proxy=http:\/\/192.168.31.51:7890 all_proxy=socks5:\/\/192.168.31.51:7890",
+    "uid" : "60685C39-E485-4E8C-8321-9C6571E2A369",
+    "name" : "proxy_host",
+    "keyword" : ""
+  }
+}

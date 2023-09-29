@@ -14,7 +14,7 @@ alt + shift - l : yabai -m window --warp east
 
 # fast focus desktop
 alt - n : yabai -m space --focus next
-alt - b : yabai -m space --focus prev
+alt + shift - n : yabai -m space --focus prev
 alt - r : yabai -m space --focus recent
 
 alt - 1 : yabai -m space --focus 1
@@ -33,9 +33,9 @@ alt + shift - 5 : yabai -m window --space 5
 alt + shift - 6 : yabai -m window --space 6
 
 # Move focus container to workspace
-shift + cmd - m : yabai -m window --space last && yabai -m space --focus last
-shift + cmd - b : yabai -m window --space prev && yabai -m space --focus prev
-shift + cmd - n : yabai -m window --space next && yabai -m space --focus next
+# shift + cmd - m : yabai -m window --space last && yabai -m space --focus last
+# shift + cmd - b : yabai -m window --space prev && yabai -m space --focus prev
+# shift + cmd - n : yabai -m window --space next && yabai -m space --focus next
 
 shift + cmd - 1 : yabai -m window --space 1 && yabai -m space --focus 1
 shift + cmd - 2 : yabai -m window --space 2 && yabai -m space --focus 2
@@ -128,3 +128,5 @@ alt - return : open -a "Alacritty"
 # alt + shift - return : osascript -e 'tell application "iTerm2" to tell current window to create tab with default profile'
 alt - f1 : open -a "Google Chrome Beta"
 alt - f2 : open -a "Visual Studio Code"
+alt - f3 : osascript -e 'tell application "System Events" to click UI element "Finder" of list 1 of application process "Dock"'
+cmd - space: open -a launchpad
