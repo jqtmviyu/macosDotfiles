@@ -103,11 +103,11 @@ window:
   decorations: transparent # none/full transparent/buttonless(macos only)
   # 终端显示的列和行的数量
   dimensions:
-    columns: 120
+    columns: 100
     lines: 25
   position:
-    x: 1200
-    y: 900
+    x: 700
+    y: 300
 
 scrolling:
   # 回滚缓冲区中的最大行数,指定“0”将禁用滚动。
