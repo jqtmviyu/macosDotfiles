@@ -1,0 +1,26 @@
+[
+  {
+    "class": "sidebar_label",
+    "font.face": "Sarasa Term SC Nerd"
+  },
+  {
+    "class": "sidebar_heading",
+    "font.face": "Sarasa Term SC Nerd"
+  },
+  {
+    "class": "tab_label",
+    "font.face": "Sarasa Term SC Nerd"
+  },
+  {
+    "class": "label_control",
+    "font.face": "Sarasa Term SC Nerd"
+  },
+  {
+    "class": "quick_panel_label",
+    "font.face": "Sarasa Term SC Nerd"
+  },
+  {
+    "class": "quick_panel_path_label",
+    "font.face": "Sarasa Term SC Nerd"
+  }
+]

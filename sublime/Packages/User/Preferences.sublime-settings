@@ -1,6 +1,6 @@
 {
-    "color_scheme": "MonokaiFreeDark.sublime-color-scheme",
-    "theme": "Adaptive.sublime-theme",
+    "color_scheme": "Packages/ayu/ayu-light.sublime-color-scheme",
+    "theme": "ayu-light.sublime-theme",
     "remember_open_files": true,
     "rulers": [
         80,
@@ -8,13 +8,16 @@
         120
     ],
     "translate_tabs_to_spaces": true,
-    "ignored_packages": [
-    ],
     "default_line_ending": "unix",
     "font_face": "Sarasa Term SC Nerd",
     "tab_size": 2,
     "hot_exit": true,
     "index_files": true,
-    "font_size": 16,
+    "font_size": 15,
     "update_check": false,
+    "dark_theme": "Default Dark.sublime-theme",
+    "light_theme": "Default Dark.sublime-theme",
+    "ignored_packages":
+    [
+    ],
 }

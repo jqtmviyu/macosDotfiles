@@ -81,4 +81,9 @@ yabai -m rule --add app="${space6App}" space=6
 manageOffApp='^(Finder|Calendar|System Preferences|Mail|Stats|App Store|LICEcap|Imagine|PicGo|electerm|KeePassXC|AppCleaner|Pixea|PictureView|App Cleaner & Uninstaller|NeatDownloadManager|Activity Monitor|Plash|Microsoft To Do|IINA|EuDic|qBittorrent|Infuse|Charles|Sublime Text|Alfred Preferences|Dictionary|Safari|Alacritty|Raycast|MacZip)$'
 yabai -m rule --add app="${manageOffApp}" manage=off
 
+yabai -m signal --add event=window_created \
+  action='yabai -m query --windows --window \
+  | jq -er ".\"can-resize\" or .\"is-floating\"" || \
+  yabai -m window $YABAI_WINDOW_ID --toggle float'
+
 echo "yabai configuration loaded.."

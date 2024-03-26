@@ -1,12 +1,15 @@
 {
 	"in_process_packages":
 	[
+		"Package Control",
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Alignment",
 		"All Autocomplete",
 		"AutoFileName",
+		"ayu",
 		"BracketHighlighter",
 		"CodeFormatter",
 		"ColorPicker",
@@ -18,6 +21,7 @@
 		"HTML5",
 		"HTMLAttributes",
 		"HTMLBeautify",
+		"INI",
 		"jQuery",
 		"JsFormat",
 		"Less",
